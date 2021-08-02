@@ -4,15 +4,11 @@ import productRouter from "./routers/productRouter.js";
 import userRouter from "./routers/userRouter.js";
 
 const app = express();
-mongoose.connect(
-  process.env.MONGODB_URL ||
-    "mongodb+srv://paulsubrata:MyProjects137@cluster0.ihuvk.mongodb.net/amazonc",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-  }
-);
+mongoose.connect(process.env.MONGODB_URL || "paste your URL here", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+});
 
 app.use("/api/users", userRouter);
 app.use("/api/products", productRouter);
