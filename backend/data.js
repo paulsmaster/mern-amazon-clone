@@ -1,7 +1,21 @@
+import bcrypt from "bcryptjs";
 const data = {
+  users: [
+    {
+      name: "Paul",
+      email: "admin@dummy.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: true,
+    },
+    {
+      name: "Steve",
+      email: "user@dummy.com",
+      password: bcrypt.hashSync("1234", 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: "1",
       name: "Polo Slim Shirt",
       category: "Shirts",
       image: "/images/p1.jpg",
@@ -13,7 +27,6 @@ const data = {
       description: "Good slim shirt",
     },
     {
-      _id: "2",
       name: "Lacoste Fit Shirt",
       category: "Shirts",
       image: "/images/p2.jpg",
@@ -25,7 +38,6 @@ const data = {
       description: "Expose with fit shirt",
     },
     {
-      _id: "3",
       name: "Tarocash Free Shirt",
       category: "Shirts",
       image: "/images/p3.jpg",
@@ -37,7 +49,6 @@ const data = {
       description: "Casual shirt for everyday use",
     },
     {
-      _id: "4",
       name: "Polo Slim Pant",
       category: "Pants",
       image: "/images/p4.jpg",
@@ -49,7 +60,6 @@ const data = {
       description: "Good quality slim fit pant",
     },
     {
-      _id: "5",
       name: "Lacoste Fit Pant",
       category: "Pants",
       image: "/images/p5.jpg",
@@ -61,7 +71,6 @@ const data = {
       description: "Nice fitting pant to show off!",
     },
     {
-      _id: "6",
       name: "Tarocash Slim Pant",
       category: "Pants",
       image: "/images/p6.jpg",
