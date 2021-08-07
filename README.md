@@ -1,6 +1,6 @@
 # This is my personal ecommerce project "Amazon Clone"
 
-This project built using MERN stack.
+This project was built using MERN stack.
 
 ## Available Scripts
 

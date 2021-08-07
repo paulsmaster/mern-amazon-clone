@@ -11,15 +11,11 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(
-  process.env.MONGODB_URL ||
-    'mongodb+srv://paulsubrata:MyProjects137@cluster0.ihuvk.mongodb.net/amazonc',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-  }
-);
+mongoose.connect(process.env.MONGODB_URL || 'Paste your link here', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+});
 
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
