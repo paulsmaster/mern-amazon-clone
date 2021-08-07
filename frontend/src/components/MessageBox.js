@@ -1,6 +1,6 @@
 const MessageBox = props => {
   return (
-    <div className={`alert alert-${props.variant || "info"}`}>
+    <div className={`alert alert-${props.variant || 'info'}`}>
       {props.children}
     </div>
   );

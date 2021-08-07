@@ -1,10 +1,10 @@
-import { Fragment, useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { detailsProduct } from "../actions/productActions";
-import LoadingBox from "../components/LoadingBox";
-import MessageBox from "../components/MessageBox";
-import Rating from "../components/Rating";
+import { Fragment, useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { detailsProduct } from '../actions/productActions';
+import LoadingBox from '../components/LoadingBox';
+import MessageBox from '../components/MessageBox';
+import Rating from '../components/Rating';
 
 const ProductScreen = props => {
   const dispatch = useDispatch();
@@ -46,7 +46,9 @@ const ProductScreen = props => {
                   ></Rating>
                 </li>
                 <li>Price: ${product.price}</li>
-                <li>Description: ${product.description}</li>
+                <li>
+                  Description: <p>${product.description}</p>
+                </li>
               </ul>
             </div>
             <div className="col-1">

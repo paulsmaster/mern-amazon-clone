@@ -1,7 +1,7 @@
 const LoadingBox = () => {
   return (
-    <div>
-      <i class="fas fa-spinner">Loading...</i>
+    <div className="loading">
+      <i className="fas fa-spinner">Loading...</i>
     </div>
   );
 };
