@@ -48,12 +48,12 @@ footer {
 
 /* Common */
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   padding: 1rem 0;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 1rem 0;
 }
 
@@ -108,9 +108,13 @@ button.block {
   width: 100%;
 }
 
+button.small {
+  font-size: 1.2rem;
+}
+
 /* Header */
 header a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #ffffff;
   padding: 1.5rem;
 }
@@ -168,7 +172,7 @@ img.small {
 }
 
 img.medium {
-  max-width: 20rem;
+  max-width: 29rem;
   width: 100%;
 }
 
@@ -207,7 +211,7 @@ img.large {
 }
 
 .rating span:last-child {
-  color: #a78936;
+  color: #404040;
   display: block;
 }
 
@@ -295,4 +299,23 @@ img.large {
 .checkout-steps > div.active {
   border-top-color: #f08000;
   color: #f08000;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tbody tr:nth-of-type(odd) {
+  background-color: #f4f4f4;
+}
+.table td,
+.table th {
+  text-align: left;
+  border: 0.1rem solid #e4e4e4;
+  padding: 0.5rem;
+}
+
+.table button {
+  margin: 0 0.2rem;
 }
