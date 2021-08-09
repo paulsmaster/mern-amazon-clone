@@ -47,7 +47,7 @@ const ProductScreen = props => {
                 </li>
                 <li>Price: ${product.price}</li>
                 <li>
-                  Description: <p>${product.description}</p>
+                  Description: <p>{product.description}</p>
                 </li>
               </ul>
             </div>

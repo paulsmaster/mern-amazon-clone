@@ -47,8 +47,8 @@ productRouter.post(
       category: 'sample category',
       brand: 'sample brand',
       countInStock: 0,
-      rating: 0,
-      numReviews: 0,
+      rating: 10,
+      numReviews: 100,
       description: 'sample description',
     });
     const createdProduct = await product.save();
