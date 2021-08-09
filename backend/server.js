@@ -13,15 +13,11 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(
-  process.env.MONGODB_URL ||
-    'mongodb+srv://paulsubrata:MyProjects137@cluster0.ihuvk.mongodb.net/amazonc',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-  }
-);
+mongoose.connect(process.env.MONGODB_URL || 'Paste your MongoDB URL here', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+});
 
 app.use('/api/uploads', uploadRouter);
 app.use('/api/users', userRouter);
